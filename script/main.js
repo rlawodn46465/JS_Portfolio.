@@ -91,9 +91,7 @@ if (screenWidht <= 767) { //터치 이동
             console.log("내려감");
             if (page == 1) return; //처음 페이지면
             page--;
-        } else if (satrtTouch - endTouch >= -10 && satrtTouch - endTouch <= 10) {
-            console.log("유지");
-        } else if (satrtTouch - endTouch > 10) {
+        }else if (satrtTouch - endTouch > 10) {
             console.log("올라감");
             if (page == lastPage) return; //마지막 페이지면
             page++;
@@ -104,12 +102,7 @@ if (screenWidht <= 767) { //터치 이동
         });
     }
 
-    function move(e) {
-        
-    }
-
     window.addEventListener("touchstart", start);
-    window.addEventListener("touchmove", move);
     window.addEventListener("touchend", end);
 }
 
