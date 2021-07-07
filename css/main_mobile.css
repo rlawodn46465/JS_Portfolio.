@@ -1,13 +1,17 @@
-body {
-  background-color: red;
+html {
   overflow: hidden;
 }
 
-header{
+body {
+  background-color: red;
+
+}
+
+header {
   text-align: center;
 }
 
-header .logo_box{
+header .logo_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +19,7 @@ header .logo_box{
   height: 100%;
 }
 
-header img{
+header img {
   margin: 0 auto;
 }
 
@@ -31,7 +35,7 @@ header nav {
   z-index: 100;
 }
 
-header nav .box_tag{
+header nav .box_tag {
   position: absolute;
   top: 4rem;
   left: -3rem;
@@ -71,17 +75,17 @@ header nav ul li {
   text-align: left;
 }
 
-#section1 h2.text_tag{
+#section1 h2.text_tag {
   width: 20px;
   left: calc(((100% - 340px) / 2));
 }
 
-#section1 .new_text{
+#section1 .new_text {
   position: relative;
   top: 80px;
 }
 
 #section3 .left_card,
-#section3 .right_card{
+#section3 .right_card {
   display: none;
 }
