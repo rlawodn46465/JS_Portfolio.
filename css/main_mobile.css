@@ -85,7 +85,7 @@ header nav ul li {
 
 #section1 .new_text {
   position: relative;
-  top: 80px;
+  top: 90px;
 }
 
 #section2 .about_box1{
@@ -120,10 +120,6 @@ header nav ul li {
   text-shadow: 1px 1px 1px black;
 }
 
-#section2 .about_box2 p {
-  
-}
-
 #section2 .about_box2 ul li {
   margin-bottom: 5px;
 }
@@ -142,7 +138,6 @@ header nav ul li {
   display: none;
 }
 
-
 #section2 .character{
   z-index: -1;
 }
@@ -151,11 +146,63 @@ header nav ul li {
   z-index: -1;
 }
 
+#section3 .carousel {
+  top: 600px;
+}
+
+#section3 .carousel .panel {
+  left: calc(50% - 76px);
+  width: 152px;
+  height: 222px;
+}
+
 #section3 .left_card,
 #section3 .right_card {
   display: none;
 }
 
+#section3 .right_card{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#section4 .character {
+  width: 100%;
+  min-width: 900px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+#section4 .skill_box {
+  width: 100%;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section4 .skill_box>div {
+  width: calc(50% - 5px);
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+#section4 .skill_box>div h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#section4 .skill_box>div img {
+  height: 50px;
+}
+
+#section4 .skill_box>div .img_box .front_black {
+  height: 50px;
+  line-height: 50px;
+}
 
 
 

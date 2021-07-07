@@ -94,19 +94,24 @@ function panelClick() {
             const leftCard = document.querySelector('.left_card');
             const rightCard = document.querySelector('.right_card');
             if (screenWidht <= 1023) {
-                console.log("보임");
-                leftCard.style.display = "block";
+                if (screenWidht >= 767) {
+                    leftCard.style.display = "block";
+                }
                 rightCard.style.display = "block";
             }
-            leftCard.firstElementChild.style.transform = "rotateY(0deg)";
-            leftCard.lastElementChild.style.transform = "rotateY(180deg)";
+            if (screenWidht >= 767) {
+                leftCard.firstElementChild.style.transform = "rotateY(0deg)";
+                leftCard.lastElementChild.style.transform = "rotateY(180deg)";
+            }
             rightCard.firstElementChild.style.transform = "rotateY(0deg)";
             rightCard.lastElementChild.style.transform = "rotateY(180deg)";
             setTimeout(function () {
                 makePanelBack(i);
-                leftCard.firstElementChild.style.transform = "rotateY(-180deg)";
-                leftCard.lastElementChild.style.transform = "rotateY(-0deg)";
-                leftCard.lastElementChild.style.backgroundImage = panelImg;
+                if (screenWidht >= 767) {
+                    leftCard.firstElementChild.style.transform = "rotateY(-180deg)";
+                    leftCard.lastElementChild.style.transform = "rotateY(-0deg)";
+                    leftCard.lastElementChild.style.backgroundImage = panelImg;
+                }
                 rightCard.firstElementChild.style.transform = "rotateY(-180deg)";
                 rightCard.lastElementChild.style.transform = "rotateY(-0deg)";
             }, 500);
@@ -116,8 +121,10 @@ function panelClick() {
             event.stopPropagation()
             const leftCard = document.querySelector('.left_card');
             const rightCard = document.querySelector('.right_card');
-            leftCard.firstElementChild.style.transform = "rotateY(0deg)";
-            leftCard.lastElementChild.style.transform = "rotateY(180deg)";
+            if (screenWidht >= 767) {
+                leftCard.firstElementChild.style.transform = "rotateY(0deg)";
+                leftCard.lastElementChild.style.transform = "rotateY(180deg)";
+            }
             rightCard.firstElementChild.style.transform = "rotateY(0deg)";
             rightCard.lastElementChild.style.transform = "rotateY(180deg)";
             if (screenWidht <= 1023) {
