@@ -1,5 +1,6 @@
 body {
   background-color: red;
+  overflow: hidden;
 }
 
 header{
@@ -19,7 +20,7 @@ header img{
 }
 
 header nav {
-  display: none;
+  /* display: none; */
   position: relative;
   position: absolute;
   top: 0;
@@ -62,21 +63,22 @@ header nav ul li {
 }
 
 #section1 h2 {
-  width: 100%;
+  width: 320px;
   top: 8rem;
-  left: 17%;
-  font-size: 1.3rem;
-  line-height: 2rem;
+  left: calc(((100% - 340px) / 2) + 20px);
+  font-size: 1rem;
+  line-height: 1.2rem;
   text-align: left;
 }
 
 #section1 h2.text_tag{
-  left: 13%;
+  width: 20px;
+  left: 10px;
 }
 
 #section1 .new_text{
   position: relative;
-  top: 40px;
+  top: 80px;
 }
 
 #section3 .left_card,
