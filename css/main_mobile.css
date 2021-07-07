@@ -7,6 +7,10 @@ body {
 
 }
 
+section{
+  overflow: hidden;
+}
+
 header {
   text-align: center;
 }
