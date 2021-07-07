@@ -88,12 +88,12 @@ if (screenWidht <= 767) { //터치 이동
     function end(e) {
         if (satrtTouch - endTouch < 0) {
             console.log("내려감");
-            if (page == lastPage) return; //마지막 페이지면
-            page++;
-        } else if (satrtTouch - endTouch > 0) {
-            console.log("올라감");
             if (page == 1) return; //처음 페이지면
             page--;
+        } else if (satrtTouch - endTouch > 0) {
+            console.log("올라감");
+            if (page == lastPage) return; //마지막 페이지면
+            page++;
         }
         var postTop = (page - 1) * $(window).height();
         $("html").animate({
