@@ -8,4 +8,5 @@ var options = {
     loop: false
 };
 var typed = new Typed('.element', options);
+
 //Typed.js 주소 : https://mattboldt.com/demos/typed-js/
