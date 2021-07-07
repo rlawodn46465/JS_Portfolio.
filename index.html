@@ -6,36 +6,259 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main_pc.css" media="screen and (min-width:1024px)" />
   <link rel="stylesheet" href="css/main_tablet.css" media="screen and (min-width:768px) and (max-width:1023px)" />
   <link rel="stylesheet" href="css/main_mobile.css" media="screen and (min-width:320px) and (max-width:767px)" />
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 
 <body>
-  <div class="wrap">
-    <section id="section1">
-      <h1><a href="#">SleepRain Portfolio</a></h1>
-      <nav>
-        <div class="box_tag"></div>
-        <ul>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">last</a></li>
-        </ul>
-      </nav>
-      <img class="character" src="images/img-01.png" alt="Character1">
-      <img class="window" src="images/img-02.png" alt="window_sun">
-      <h2>
-        안녕하세요.<br>
-        상상은 못하지만 항상 꿈을 꾸는<br>
-        잠자는 개발자 김재우입니다.
-      </h2>
-    </section>
-
+  <header id="headerbox">
+    <div class="logo_box">
+    <a href="#section1" id="top"><img src="images/logo.png" alt="logo"></a>
   </div>
+    <nav>
+      <div class="box_tag"></div>
+      <ul>
+        <li><a id="menu1" href="#section2">About me</a></li>
+        <li><a id="menu2" href="#section3">Projects</a></li>
+        <li><a id="menu3" href="#section4">Skills</a></li>
+        <li><a id="menu4" href="#section5">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <section id="section1">
+      <img class="character" src="images/img-01_1.png" alt="Character1">
+      <h2>
+        &lt;<span class="red">!DOCTYPE</span> <span class="purple">html</span>&gt;<br>
+        &lt;<span class="red">html</span> <span class="green">lang</span>=<span class="yellow">"ko"</span>&gt;<br>
+        &lt;<span class="red">head</span>&gt;<br>
+        &emsp;&lt;<span class="red">meta</span> <span class="green">charset</span>=<span class="yellow">"UTF-8"</span>&gt;<br>
+        &emsp;&lt;<span class="red">title</span>&gt;SleepRain&lt;<span class="red">/title</span>&gt;<br>
+        &lt;<span class="red">/head</span>&gt;<br>
+        &lt;<span class="red">body</span>&gt;<br>
+        &emsp;<span class="element"></span><br>
+        &lt;<span class="red">/body</span>&gt;<br>
+        &lt;<span class="red">/html</span>&gt;
+      </h2>
+      <h2 class="text_tag">
+        1<br>
+        2<br>
+        3<br>
+        4<br>
+        5<br>
+        6<br>
+        7<br>
+        8<br>
+        9<br>
+        10<br>
+      </h2>
+      <div class="new_text">
+        <h1>안녕하세요</h1>
+        <h1>상상은 못하지만 항상 꿈을 꾸는</h1>
+        <h1>잠자는 개발자 김재우입니다.</h1>
+      </div>
+    </section>
+    <section id="section2">
+      <h1>ABOUT ME</h1>
+      <div class="about_box1">
+        <h3>잠자는 개발자</h3>
+        <div class="about_smalbox">
+          <p><span>생년월일</span> 1998.1.5</p>
+          <p><span>이메일</span> rlawodn46465@naver.com</p>
+          <p><span>휴대전화</span> 010-2599-7254</p>
+          <p><span>학력</span> 동의과학대학교 컴퓨터정보과 졸업</p>
+          <p><span>사는곳</span> 부산광역시 동래구</p>
+        </div>
+      </div>
+      <div class="about_box2">
+        <h3>풀스택을 위한 노력</h3>
+        <ul>
+          <li>
+            <img src="images/icon-06.png" alt="JS">
+            <p>#DOM 컨트롤 #Jquery</p>
+          </li>
+          <li>
+            <img src="images/icon-09.png" alt="Vue">
+            <p>#부동산 판매 사이트</p>
+          </li>
+          <li>
+            <img src="images/icon-08.png" alt="React">
+            <p>#여행 사이트 #코로나 19 현황</p>
+          </li>
+          <li>
+            <img src="images/icon-11.png" alt="nodejs">
+            <p>#백준 알고리즘 풀기</p>
+          </li>
+          <li>
+            <img src="images/icon-10.png" alt="JAVA">
+            <p>#DB CRUD #JSP</p>
+          </li>
+          <li>
+            <img src="images/icon-15.png" alt="Ai">
+            <p>#로고 디자인 #아이콘 디자인</p>
+          </li>
+          <li>
+            <img src="images/icon-16.png" alt="Ps">
+            <p>#사진 합성 #사진 보정 #움짤 제작</p>
+          </li>
+          <li>
+            <img src="images/icon-14.png" alt="Github">
+            <p>#소스 저장 #웹 호스팅</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about_box3">
+        <div class="aphantasia">
+          <h3>아판타시아</h3>
+          <p>
+            간단한 사물도 상상하지 못하는<br>
+            마음의 눈을 읽는 증상<br>
+            상상은 못 하지만 꿈을 꿀 수 있고<br>
+            원하는걸 만들 수 있는<br>
+            꿈꿔왔던 것들을 만드는<br>
+            개발자가 되겠습니다
+          </p>
+        </div>
+        <div class="codingbox">
+          <div class="codingtext_box1">
+            <h3>코딩하며 하는 생각들</h3>
+            <p>
+              카페인이 필요해, 모바일 호환<br>
+              변수명 뭐로 하지..., 왜 되는거야?<br>
+              HTML은 프로그래밍 언어가 아니에요<br>
+              소중한 저장소, 디자인도 스스로!!
+            </p>
+          </div>
+          <div class="codingtext_box2">
+            <h3>코딩 습관</h3>
+            <p>
+              Keep it simple, stupid <br>
+              검색 검색 검색 검색...<br>
+              저는 벌레(bug)가 싫어요
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="character" src="images/img-02_2.png" alt="Character2">
+      <img class="arrow" src="images/arrow.png" alt="aroow">
+    </section>
+    <section id="section3">
+      <h1>Projects</h1>
+      <ul class="carousel"></ul>
+      <div class="left_card">
+        <div class="front"></div>
+        <div class="back"></div>
+      </div>
+      <div class="right_card">
+        <div class="front"></div>
+        <div class="back"></div>
+      </div>
+      <img class="character" src="images/img-02_2.png" alt="Character2">
+    </section>
+    <section id="section4">
+      <h1>Skills</h1>
+      <img class="character" src="images/img-03-3.png" alt="Character3">
+      <div class="skill_box">
+        <div class="front_box">
+          <h2>Front-End</h2>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-04.png" alt="html">
+          </div>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-05.png" alt="css">
+          </div>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-06.png" alt="js">
+          </div>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-07.png" alt="jquery">
+          </div>
+          <div class="img_box">
+            <div class="front_black">tried</div>
+            <img src="images/icon-08.png" alt="react">
+          </div>
+          <div class="img_box">
+            <div class="front_black">tried</div>
+            <img src="images/icon-09.png" alt="vue">
+          </div>
+        </div>
+        <div class="back_box">
+          <h2>Back-End</h2>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-10.png" alt="java">
+          </div>
+          <div class="img_box">
+            <div class="front_black">tried</div>
+            <img src="images/icon-11.png" alt="nodejs">
+          </div>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-12.png" alt="mysql">
+          </div>
+        </div>
+        <div class="design_box">
+          <h2>Design</h2>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-15.png" alt="illustrator">
+          </div>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-16.png" alt="photoshop">
+          </div>
+        </div>
+        <div class="version_box">
+          <h2>Version Control</h2>
+          <div class="img_box">
+            <div class="front_black">tried</div>
+            <img src="images/icon-13.png" alt="git">
+          </div>
+          <div class="img_box">
+            <div class="front_black">familiar</div>
+            <img src="images/icon-14.png" alt="github">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section5">
+      <h1>Contact</h1>
+      <div class="sns_box">
+        <div class="sns_line">
+          <img src="images/icon-01.png" alt="phone"><span>010-2599-7254</span><br>
+        </div>
+        <div class="sns_line">
+          <img src="images/icon-02.png" alt="email"><span>rlawodn46465@naver.com</span><br>
+        </div>
+        <div class="sns_line">
+          <img src="images/icon-03.png" alt="git"><span>https://github.com/rlawodn46465</span><br>
+        </div>
+      </div>
+      <h2>봐주셔서 감사합니다</h2>
+      <p>
+        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+        ⓒ copyright 2021. SleepRain. All rights reserved.
+      </p>
+      <div class="img_box">
+        <img class="light" src="images/img-05.png" alt="light">
+        <img class="character" src="images/img-04-04.png" alt="light">
+      </div>
+    </section>
+  </div>
+  <script src="script/typed.js"></script>
   <script src="script/main.js"></script>
+  <script src="script/project.js"></script>
 </body>
 
 </html>

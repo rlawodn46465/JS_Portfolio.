@@ -2,21 +2,35 @@ body {
   background-color: red;
 }
 
-#section1 h1 {
+header{
   text-align: center;
 }
 
-#section1 nav {
+header .logo_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+header img{
+  margin: 0 auto;
+}
+
+header nav {
+  display: none;
   position: relative;
   position: absolute;
   top: 0;
   right: 0;
   float: right;
   width: 10rem;
-  height: 100%;
+  height: 100vh;
+  z-index: 100;
 }
 
-#section1 nav .box_tag{
+header nav .box_tag{
   position: absolute;
   top: 4rem;
   left: -3rem;
@@ -26,34 +40,46 @@ body {
   z-index: 1000;
 }
 
-#section1 nav ul {
+header nav ul {
   width: 10rem;
   height: 100%;
   background-color: black;
   z-index: 100;
 }
 
-#section1 nav ul li {
+header nav ul li {
   color: white;
   text-align: center;
+}
+
+#section1 {
+  width: 100%;
+  height: 100vh;
 }
 
 #section1 .character {
   width: 30rem;
 }
 
-#section1 .window {
-  width: 20rem;
-  left: 22%;
-  bottom: 13rem;
-}
-
 #section1 h2 {
   width: 100%;
   top: 8rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 17%;
   font-size: 1.3rem;
-  line-height: 3rem;
-  text-align: center;
+  line-height: 2rem;
+  text-align: left;
+}
+
+#section1 h2.text_tag{
+  left: 13%;
+}
+
+#section1 .new_text{
+  position: relative;
+  top: 40px;
+}
+
+#section3 .left_card,
+#section3 .right_card{
+  display: none;
 }

@@ -14,33 +14,49 @@ ol {
   list-style-type: none;
 }
 
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-#section1 {
+header {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
-#section1 h1 {
-  font-size: 2rem;
-  float: left;
-  line-height: 4rem;
-}
-
-#section1 nav ul {
+header nav ul {
   line-height: 4rem;
   position: absolute;
   top: 0;
   right: 0;
 }
 
+#section1 {
+  width: 100%;
+  height: calc(100vh);
+  position: relative;
+}
+
 #section1 .character {
   position: absolute;
-  left: 0;
+  left: -2px;
   bottom: 0;
   z-index: 10;
 }
@@ -50,5 +66,410 @@ ol {
 }
 
 #section1 h2 {
+  display: inline-block;
+  width: 465px;
   position: absolute;
+  text-align: left;
+  z-index: 10;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#section1 span.red{
+  color: red;
+}
+
+#section1 span.purple{
+  color: purple;
+}
+
+#section1 span.green{
+  color: green;
+}
+
+#section1 span.yellow{
+  color: #E5DF91;
+}
+
+#section1 h2.text_tag {
+  width: 40px;
+  position: absolute;
+}
+
+#section1 .new_text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  text-shadow: 1px 1px 1px black;
+  z-index: 10000;
+}
+
+#section1 h1 {
+  text-align: center;
+}
+
+#section2 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#section2 h1 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 60px;
+}
+
+#section2 h3 {
+  margin-bottom: 6px;
+}
+
+#section2 img.character {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+#section2 img.arrow {
+  position: absolute;
+  left: 300px;
+  bottom: 250px;
+}
+
+#section2 .about_box1 {
+  box-sizing: border-box;
+  width: calc(100% / 3);
+  float: left;
+}
+
+#section2 .about_box1 h3 {
+  width: 320px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#section2 .about_box1 .about_smalbox {
+  text-align: left;
+  width: 320px;
+  margin: 0 auto;
+}
+
+#section2 .about_box1 p {}
+
+#section2 .about_box1 p span {
+  display: inline-block;
+  width: 70px;
+}
+
+#section2 .about_box2 {
+  width: calc(100% / 3);
+  float: left;
+}
+
+#section2 .about_box2 h3 {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#section2 .about_box2 ul {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#section2 .about_box2 ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#section2 .about_box2 ul li img {
+  width: 50px;
+}
+
+#section2 .about_box2 ul li p {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#section2 .about_box3 {
+  width: calc(100% / 3);
+  float: left;
+}
+
+#section2 .about_box3 .aphantasia {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+#section2 .about_box3 .codingbox {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#section2 .about_box3 .codingbox .codingtext_box1 {
+  margin-bottom: 40px;
+}
+
+#section2 .about_box3 .codingbox .codingtext_box2 {}
+
+#section3 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  perspective: 600px;
+}
+
+#section3 h1 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 60px;
+}
+
+@keyframes bingle {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#section3 .carousel {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  top: 800px;
+  left: 200px;
+  transform-style: preserve-3d;
+  animation: bingle 20s infinite linear;
+  z-index: 120;
+}
+
+#section3 .carousel .panel {
+  position: absolute;
+  left: calc(50% - 115px);
+  top: 50%;
+  width: 230px;
+  height: 336px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform-origin: 50% 0%;
+  z-index: 99;
+}
+
+#section3 .carousel:hover {
+  animation-play-state: paused;
+}
+
+#section3 .left_card {
+  width: 316px;
+  height: 461px;
+  position: absolute;
+  z-index: 10000;
+}
+
+#section3 .left_card>div,
+#section3 .right_card>div {
+  height: inherit;
+  width: inherit;
+  backface-visibility: hidden;
+  transition: all 1s;
+}
+
+.front {
+  background-image: url(../images/card.png);
+}
+
+.back {
+  background-image: url(../images/card2.png);
+  background-size: contain;
+}
+
+.left_card>div:last-child,
+.right_card>div:last-child {
+  position: relative;
+  top: -461px;
+  transform: rotateY(180deg);
+}
+
+#section3 .right_card {
+  width: 316px;
+  height: 461px;
+  position: absolute;
+  z-index: 10000;
+}
+
+#section3 .right_card .back {
+  text-align: center;
+}
+
+#section3 .right_card h2 {
+  padding: 10px 0px;
+}
+
+#section3 .right_card p {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 316px;
+  height: 160px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+#section3 .right_card .skill_list {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 316px;
+  height: 250px;
+  padding: 20px;
+}
+
+#section3 .right_card .skill_list img {
+  height: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#section3 img.character {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+#section4 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+#section4 h1 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 60px;
+}
+
+#section4 .skill_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 1127px;
+  margin: 0 auto;
+  top: 330px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section4 .skill_box>div {
+  width: 240px;
+  margin: 40px 130px;
+}
+
+#section4 .skill_box>div h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#section4 .skill_box>div .img_box {
+  display: inline-block;
+  position: relative;
+}
+
+#section4 .skill_box>div .img_box .front_black {
+  width: 100%;
+  height: 70px;
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  line-height: 70px;
+}
+
+#section4 .skill_box>div img {
+  height: 70px;
+}
+
+#section4 .character {
+  width: 100%;
+  min-width: 1680px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+#section5 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+#section5 h1 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 60px;
+  margin-bottom: 200px;
+}
+
+#section5 .sns_box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 1000;
+}
+
+#section5 .sns_box .sns_line {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#section5 .sns_box span {
+  line-height: 20px;
+}
+
+#section5 h2 {
+  margin-bottom: 20px;
+}
+
+#section5 p {
+  font-size: 10px;
+}
+
+#section5 .img_box {
+  position: absolute;
+  width: 1024px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section5 .light {
+  position: absolute;
+  top: 60px;
+  right: 20%;
+}
+
+#section5 .character {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
 }
